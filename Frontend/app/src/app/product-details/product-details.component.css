@@ -1,0 +1,247 @@
+
+.main-content {
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+p {
+    padding-left: 0.25rem;
+}
+
+.post-date {
+    display: flex;
+    justify-content: right;
+}
+
+
+.container {
+
+    width: 15rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
+
+}
+
+.material-icons-user {
+    display: inline;
+}
+
+.container1 {
+    margin-left: 3rem;
+    width: 20rem;
+}
+
+mat-raised button {
+    float: left;
+}
+
+/* .scroll-ele{
+    overflow-y: scroll;
+    width: 50rem;
+    margin-left: 25rem;
+    margin-top: -25rem;
+    background-color: blueviolet;
+} */
+
+
+
+img {
+    border-radius: 4px;
+    /* border: 5px solid black; */
+}
+
+.user-profile-box {
+    border: 1px solid rgb(70, 66, 66);
+    margin-top: 1rem;
+    border-radius: 3px;
+    /* width: 20rem; */
+}
+
+.user-profile-box-review {
+    border: 1px solid black;
+    margin-top: -2rem;
+    border-radius: 3px;
+    min-height: 6rem;
+    max-height: 10rem;
+    overflow-y: auto;
+}
+
+
+
+.preference {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 3.5rem;
+    border-radius: 6px;
+    margin-top: 0rem;
+    padding-top: 0.5rem;
+    background: #E7EEE7;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    
+}
+
+.main-image{
+
+    border-radius: 6px;
+    object-fit: fill;
+    
+}
+
+
+
+.lft-scroll-box {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.preference-chip {
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: -1rem;
+
+}
+
+.description-text-box {
+    border:1px solid rgb(58, 10, 134);
+    margin-top: -9rem;
+    border-radius: 6px;
+    min-height:11rem; 
+    max-height:13px;
+    overflow-y: auto;
+    
+    
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1450px){
+    .description-text-box {
+        border:1px solid rgb(58, 10, 134);
+        margin-top: 1rem;
+        border-radius: 6px;
+        min-height: 10rem; 
+        max-height:12px;
+        overflow-y: auto;
+    }
+    .example-card{
+        width: 18rem;
+    }
+
+    .user-profile-box-review {
+        border: 1px solid black;
+        margin-top: 0rem;
+        border-radius: 3px;
+        min-height: 6rem;
+        max-height: 10rem;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1250px){
+    .description-text-box {
+        border:1px solid rgb(58, 10, 134);
+        margin-top: 1rem;
+        border-radius: 6px;
+        min-height: 6rem; 
+        max-height:9px;
+        overflow-y: auto;
+    }
+    .example-card{
+        width: 14rem;
+    }
+
+    .user-profile-box-review {
+        border: 1px solid black;
+        margin-top: 1rem;
+        border-radius: 3px;
+        min-height: 6rem;
+        max-height: 10rem;
+        overflow-y: auto;
+
+    }
+}
+
+
+.exchange-button {
+    margin-top: 1rem;
+}
+
+
+.coin-box:hover {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 4px 4px 4px 4px;
+    background: #D9EDFD;
+    box-shadow: 2px 2px 2px 2px #bee4ed;
+    
+    
+}
+
+.coin-box {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 4px 4px 4px 4px;
+    background: #D9EDFD;   
+   
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+    .description-text-box {
+        border:1px solid rgb(58, 10, 134);
+        margin-top: 1rem;
+        border-radius: 6px;
+        min-height: 6rem; 
+        max-height:9px;
+        overflow-y: auto;
+    }
+    .user-profile-box-review {
+        border: 1px solid black;
+        margin-top: 1rem;
+        border-radius: 3px;
+        min-height: 6rem;
+        max-height: 10rem;
+        overflow-y: auto;
+    }
+    
+    }
+    .review-box{
+        display: inline-block;
+        background-color:rgb(183, 183, 206);
+        min-width:28rem;
+        max-width: 39rem;
+     
+    }
+    .product-owner-details{
+        display:inline-block;
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 700px){
+        .description-text-box {
+            border:1px solid rgb(58, 10, 134);
+            margin-top: 1rem;
+            border-radius: 6px;
+            min-height: 6rem; 
+            max-height:9px;
+            overflow-y: auto;
+        }
+        .user-profile-box-review {
+            border: 1px solid black;
+            margin-top: 1rem;
+            border-radius: 3px;
+            min-height: 6rem;
+            max-height: 10rem;
+            overflow-y: auto;
+        }
+        
+        }
+    

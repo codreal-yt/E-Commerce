@@ -1,0 +1,16 @@
+
+    <div class="content" style="margin-top: -3rem;">
+      <div fxLayout="row wrap" fxLayoutAlign="left" fxLayoutGap="2%">
+            <mat-card (click)="goToProduct(a.pid)" class="example-card" *ngFor="let a of getproduct " fxFlex="23%" fxLayoutGap="2%">
+              <img mat-card-image [src]="a.image" style="height:15rem;">
+                <mat-card-content>
+                <p>{{a.pname}}</p>
+                <div class="addres_data">
+                  <p>{{a.pcity}}</p>
+                  <p>{{a.pdatepost.substring(0,10)}}</p>
+                </div>
+              </mat-card-content>
+            </mat-card>
+      </div>
+    </div>
+  

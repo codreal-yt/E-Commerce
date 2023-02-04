@@ -1,0 +1,91 @@
+<body>
+  <div class="container">
+
+
+    <mat-card class="example-card-header mb-2">
+      <p class="header-card-text">Add Product</p>
+    </mat-card>
+    <mat-card class="example-card">
+      <mat-card-content>
+        <div class="row">
+          <form [formGroup]="productForm">
+
+            <div class="row">
+              <label class="col-2 label">Product Name</label>
+              <mat-form-field class="col-10" appearance="outline">
+                <mat-label>Product Name</mat-label>
+                <input matInput placeholder="Placeholder" formControlName="pname">
+              </mat-form-field>
+
+              <label class="col-md-2 label">Category</label>
+              <mat-form-field class="col-md-3" appearance="outline">
+                <mat-label>Select</mat-label>
+                <mat-select formControlName="pcategory" ngDefaultControl>
+                  <div>
+                    <mat-option value="Mobiles">Mobiles</mat-option>
+                    <mat-option value="Automobiles">Automobiles</mat-option>
+                    <mat-option value="Electronics">Electronics</mat-option>
+                    <mat-option value="Fashion">Fashion</mat-option>
+                    <mat-option value="Appliances">Appliances</mat-option>
+                    <mat-option value="Furnitures">Furnitures</mat-option>
+                  </div>
+                </mat-select>
+              </mat-form-field>
+
+              <label class="col-md-3 label">Location</label>
+              <mat-form-field class="col-md-4" appearance="outline">
+                <mat-label><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem;"> </i>Place
+                </mat-label>
+                <mat-select formControlName="pcity" ngDefaultControl>
+                  <mat-option value="Andhra Pradesh">Andhra Pradesh</mat-option>
+                  <mat-option value="Assam">Assam</mat-option>
+                  <mat-option value="Arunachal Pradesh">Arunachal Pradesh</mat-option>
+                  <mat-option value="Bihar">Bihar</mat-option>
+                  <mat-option value="Chhattisgarh">Chhattisgarh</mat-option>
+                  <mat-option value="Goa">Goa</mat-option>
+                  <mat-option value="Gujarat">Gujarat</mat-option>
+                  <mat-option value="Haryana">Haryana</mat-option>
+                  <mat-option value="Himachal Pradesh">Himachal Pradesh</mat-option>
+                  <mat-option value="Jharkhand">Jharkhand</mat-option>
+                  <mat-option value="Karnataka">Karnataka</mat-option>
+                  <mat-option value="Kerala">Kerala</mat-option>
+                  <mat-option value="Madhya Pradesh">Madhya Pradesh</mat-option>
+                  <mat-option value="Maharashtra">Maharashtra</mat-option>
+                  <mat-option value="Manipur">Manipur</mat-option>
+                  <mat-option value="Meghalaya">Meghalaya</mat-option>
+                  <mat-option value="Nagaland">Nagaland</mat-option>
+                  <mat-option value="Odisha">Odisha</mat-option>
+                </mat-select>
+              </mat-form-field>
+
+              <label class="col-md-2 label">Description</label>
+              <mat-form-field class="col-md-10" appearance="outline">
+                <textarea formControlName="description" matInput></textarea>
+              </mat-form-field>
+
+
+              <label class="col-2 label">Price</label>
+              <mat-form-field class="col-3" appearance="outline">
+                <mat-label>Price</mat-label>
+                <input formControlName="pcoin" matInput placeholder="Placeholder">
+              </mat-form-field>
+              <label class="col-md-3 label">Add Image</label>
+              <div class="col-md-4 mt-3">
+                <!-- <input type="file" (change)="handleFileInput($event.target['files'])" formControlName="image"/> -->
+                <input type="file" (change)="onChange($event)" formControlName="image"/>
+            <img [src]="myImage" alt="image" class="show-img">
+              </div>
+            </div>
+          </form>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="button">
+      <button class="btn" (click)="onClickSubmitForm()" mat-raised-button style="background: #43db52">
+        Add
+      </button>
+    </div>
+  </div>
+
+</body>

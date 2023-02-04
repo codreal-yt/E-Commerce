@@ -1,0 +1,79 @@
+
+<body class="main-content">
+    <!-- Scroll Image -->
+    <div class="row product-content">
+      <div class="col-lg-1 col-md-1 col-sm-2 col-2 lft-scroll-box">
+       
+      </div>
+  
+      <!-- Main Image of the product -->
+      <div class="col-lg-4 col-md-4 col-sm-8 col-8">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-sm-9 main-image">
+            <mat-grid-list cols="1" rowHeight="1:1" class="mt-4">
+              <mat-grid-tile>
+                <img mat-card-image src={{image}} alt="image" style='height: 100%; width: 100%; object-fit: contain'/>
+                <!-- <img mat-card-image src="assets/download.jpg" alt="img" style='height: 100%; width: 100%; object-fit: contain'> -->
+              </mat-grid-tile>
+            </mat-grid-list>
+
+            <button mat-raised-button color="accent" class="mt-4" style="width: 100%;">Buy Now</button>
+          </div>
+  
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+  
+      <div class="col-lg-6 col-md-6 col-sm-10 col-10">
+        <div class="row">
+          <div>
+            <h1 style="font-size: 3.2vw">{{ pname }}</h1>
+          </div>
+  
+          <!--post date -->
+          <div class="row" style="font-size: 1.2vw">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 column">
+              
+                <span class="material-icons">location_on</span>
+                <span style="font-size: large; color:blue; margin-left: 0.75rem; ">{{pcity}}</span>
+             
+            </div>
+  
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 post-date">
+              <p><b> Date of Posting :</b> {{ pdatepost.substring(0, 10) }}</p>
+            </div>
+          </div>
+  
+          <div class="row" style="font-size: 1.2vw" style="margin-top: 1rem">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+              <span class="coin-box"
+                ><i class="fa-solid fa-coins"></i>Rs: {{ pcoin }}</span
+              >
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+    </div>
+    <!--==========================================================First row end here================================================== -->
+  
+    <!-- Row for description -->
+  
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+      <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+        <div class="row">
+         
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-10 col-10">
+        <div class="description-text-box">
+          <p><b>Description of the product</b></p>
+          <p>{{ description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+    </div>
+  </body>

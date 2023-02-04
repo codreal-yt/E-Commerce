@@ -1,0 +1,51 @@
+/* .body {
+  position: relative;
+  background: #F0ECEC;
+}
+
+body {
+  position: relative;
+  background: #F0ECEC;
+} */
+
+.example-card-header {
+  background: #F24726;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+.header-card-text {
+  color: white;
+  font-size:1.25rem;
+  font-weight: 500;
+}
+
+.example-card {
+  background: #f3f9fc;
+}
+
+.label{
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  font-size: larger;
+  margin-top: 0.75rem;
+  color: rgb(12, 12, 171);
+}
+.button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  
+}
+
+.btn{
+  width: 6rem;
+  font-size: large;
+}
+
+.show-img{
+  max-width: 4rem;
+  max-height: 4rem;
+}
