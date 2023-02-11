@@ -14,7 +14,7 @@ Step6: Run the application using command : ng serve
 Step7: Open any web browser                                                                                                                                      
        type : localhost:4200                                                                                                                                    
                                                                                                                                                                  
-(If getting any error, Ping me in Youtube channel comment box or in Telegram channel)
+(If getting any error, Ping me in Youtube channel 1 comment box or in Telegram channel)
                                                                                                                                                                          
                                                                                                                                                                         
 Like, share and subscribe to my channel for more updates.                                                                                                                 
