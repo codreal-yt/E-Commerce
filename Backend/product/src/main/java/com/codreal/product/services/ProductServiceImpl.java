@@ -14,6 +14,8 @@ public class ProductServiceImpl implements ProductService{
 
     @Autowired
     private ProductRepository productRepository;
+    @Autowired
+    private SequenceGeneratorService sequenceGeneratorService;
 
     @Override
     public List<Product> getAll() throws NoProductExistInRepository {
@@ -27,7 +29,7 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public Product getById(Long pid) throws NoProductExistInRepository {
+    public Product getById(int pid) throws NoProductExistInRepository {
         Optional<Product> product = productRepository.findById(pid);
         if(product.isEmpty()){
             throw new NoProductExistInRepository();
@@ -38,6 +40,7 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public Product add1(Product product) {
+        product.setPid(sequenceGeneratorService.generateSequence(Product.SEQUENCE_NAME));
         return productRepository.save(product);
     }
 

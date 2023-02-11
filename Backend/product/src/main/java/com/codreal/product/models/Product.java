@@ -1,15 +1,20 @@
 package com.codreal.product.models;
 
-import jakarta.persistence.*;
+
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 
-@Entity
-@Table(name = "product")
+@Document(collection="product")
 public class Product {
+    @Transient
+    public static final String SEQUENCE_NAME = "sequence";
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long pid;
+    private int pid;
 
     private String pname;
     private String pcategory;
@@ -18,13 +23,12 @@ public class Product {
     private String pcity;
     private double pcoin;
 
-    @Column(columnDefinition = "MEDIUMTEXT")
     private String image;
 
     public Product() {
     }
 
-    public Product(Long pid, String pname, String pcategory, Date pdatepost, String description, String pcity, double pcoin, String image) {
+    public Product(int pid, String pname, String pcategory, Date pdatepost, String description, String pcity, double pcoin, String image) {
         this.pid = pid;
         this.pname = pname;
         this.pcategory = pcategory;
@@ -35,11 +39,11 @@ public class Product {
         this.image = image;
     }
 
-    public Long getPid() {
+    public int getPid() {
         return pid;
     }
 
-    public void setPid(Long pid) {
+    public void setPid(int pid) {
         this.pid = pid;
     }
 

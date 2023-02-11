@@ -40,7 +40,7 @@ public class ProductController {
     }
 
     @GetMapping("/get/by/pid/{pid}")
-    public ResponseEntity<Product> getById(@PathVariable Long pid){
+    public ResponseEntity<Product> getById(@PathVariable int pid){
         try {
             return new ResponseEntity<Product>(productService.getById(pid), HttpStatus.OK);
         }catch (NoProductExistInRepository e) {
